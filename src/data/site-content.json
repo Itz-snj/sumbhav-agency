@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "name": "SumBhav",
+    "tagline": "Software studio engineering simplicity at scale.",
+    "location": "Bengaluru / Remote",
+    "email": "hello@sumbhav.studio"
+  },
+  "hero": {
+    "headline": "SumBhav",
+    "subline": "We design, build and ship production software for ambitious B2B teams. Type systems, distributed services, and interfaces with taste.",
+    "cta": "Talk to SumBhav"
+  },
+  "marquee": [
+    "Product Engineering",
+    "Design Systems",
+    "Platform & Infra",
+    "AI Workflows",
+    "Data Pipelines",
+    "Developer Experience",
+    "Type-safe APIs",
+    "Observability"
+  ],
+  "manifesto": {
+    "title": "Simplicity meets sophistication.",
+    "body": "We believe great software is invisible — felt before it is seen. SumBhav is a small, senior team that ships like a startup and reasons like a research lab."
+  },
+  "services": [
+    { "code": "01", "name": "Product Engineering", "blurb": "Full-stack delivery from zero to series-B scale." },
+    { "code": "02", "name": "Platform & Infra",    "blurb": "Edge runtimes, queues, and observability that hold." },
+    { "code": "03", "name": "Design Systems",       "blurb": "Tokenised, accessible, ruthlessly consistent." },
+    { "code": "04", "name": "AI Workflows",         "blurb": "Pragmatic LLM systems wired into real products." }
+  ],
+  "footer": {
+    "headline": "LET'S WORK TOGETHER",
+    "socials": [
+      { "label": "GitHub",   "href": "https://github.com" },
+      { "label": "Twitter",  "href": "https://twitter.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com" },
+      { "label": "Email",    "href": "mailto:hello@sumbhav.studio" }
+    ]
+  }
+}
