@@ -4,8 +4,7 @@ import { motion, useScroll, useTransform, type MotionValue } from "framer-motion
 type Props = {
   text: string;
   className?: string;
-  /** Tailwind class for each word wrapper */
-  wordClassName?: string;
+  style?: React.CSSProperties;
 };
 
 function Word({
@@ -28,7 +27,7 @@ function Word({
   );
 }
 
-export function WordRevealText({ text, className }: Props) {
+export function WordRevealText({ text, className, style }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -36,7 +35,7 @@ export function WordRevealText({ text, className }: Props) {
   });
   const words = text.split(/\s+/).filter(Boolean);
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} className={className} style={style}>
       {words.map((w, i) => {
         const start = i / words.length;
         const end = Math.min(1, start + 1.5 / words.length);

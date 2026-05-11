@@ -43,7 +43,7 @@ export function InvertedScrollSection() {
         <WordRevealText
           text="We build calm, durable software for teams who measure quality in years, not sprints — interfaces with taste, systems with rigor."
           className="font-black uppercase leading-[0.95] tracking-[-0.03em] max-w-[14ch] md:max-w-none"
-          {...{ style: { fontSize: "clamp(2.5rem, 8.5vw, 9rem)" } as React.CSSProperties }}
+          style={{ fontSize: "clamp(2.5rem, 8.5vw, 9rem)" }}
         />
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 font-mono text-xs uppercase tracking-[0.25em] opacity-80">
