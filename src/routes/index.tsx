@@ -5,6 +5,7 @@ import { Terminal } from "@/components/site/Terminal";
 import { Manifesto } from "@/components/site/Manifesto";
 import { SelectedWorks } from "@/components/site/SelectedWorks";
 import { Footer } from "@/components/site/Footer";
+import { InvertedScrollSection } from "@/components/site/InvertedScrollSection";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -30,6 +31,7 @@ function Index() {
     <main className="bg-background text-foreground antialiased">
       <Hero />
       <Marquee />
+      <InvertedScrollSection />
       <Manifesto />
       <SelectedWorks />
       <Terminal />
