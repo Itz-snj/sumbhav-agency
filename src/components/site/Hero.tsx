@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import content from "@/data/site-content.json";
 import { ArrowDownRight } from "lucide-react";
+import { ParticleText } from "./ParticleText";
+import { FakeCursors } from "./FakeCursors";
 
 export function Hero() {
   return (
@@ -24,7 +26,8 @@ export function Hero() {
       </header>
 
       {/* Hero typography */}
-      <div className="flex-1 flex flex-col justify-center px-4 md:px-10 py-24">
+      <div className="relative flex-1 flex flex-col justify-center px-4 md:px-10 py-24">
+        <FakeCursors />
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,15 +39,21 @@ export function Hero() {
           <span>◍ B2B Software Studio</span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 60 }}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-gradient-warm font-black leading-[0.82] tracking-[-0.04em] uppercase"
-          style={{ fontSize: "clamp(5rem, 22vw, 22rem)" }}
+          className="relative"
+          aria-label={content.hero.headline}
         >
-          {content.hero.headline}
-        </motion.h1>
+          <h1 className="sr-only">{content.hero.headline}</h1>
+          <ParticleText
+            text={content.hero.headline}
+            className="w-full h-[clamp(180px,32vw,440px)]"
+            density={6}
+            repulsion={120}
+          />
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-12">
           <div className="md:col-span-5 md:col-start-7">
