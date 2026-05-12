@@ -1,24 +1,22 @@
 {
   "brand": {
     "name": "SumBhav",
-    "tagline": "Software studio engineering simplicity at scale.",
-    "location": "Bengaluru / Remote",
+    "tagline": "SumBhav Works — engineering simplicity at scale.",
+    "location": "West Bengal, India HQ",
     "email": "hello@sumbhav.studio"
   },
   "hero": {
     "headline": "SumBhav",
-    "subline": "We design, build and ship production software for ambitious B2B teams. Type systems, distributed services, and interfaces with taste.",
+    "subline": "Bridging Complex Business Logic with Modern Digital Experiences. Focused on UK Enterprise Solutions.",
     "cta": "Talk to SumBhav"
   },
   "marquee": [
-    "Product Engineering",
-    "Design Systems",
-    "Platform & Infra",
-    "AI Workflows",
-    "Data Pipelines",
-    "Developer Experience",
-    "Type-safe APIs",
-    "Observability"
+    "React.js",
+    "Next.js",
+    "Firebase",
+    "Flutter",
+    "TDL Integration",
+    "Docker"
   ],
   "manifesto": {
     "title": "Simplicity meets sophistication.",
