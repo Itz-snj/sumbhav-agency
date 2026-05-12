@@ -6,6 +6,8 @@ import { Manifesto } from "@/components/site/Manifesto";
 import { SelectedWorks } from "@/components/site/SelectedWorks";
 import { Footer } from "@/components/site/Footer";
 import { InvertedScrollSection } from "@/components/site/InvertedScrollSection";
+import { Team } from "@/components/site/Team";
+import { EnquiryForm } from "@/components/site/EnquiryForm";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,7 +36,9 @@ function Index() {
       <InvertedScrollSection />
       <Manifesto />
       <SelectedWorks />
+      <Team />
       <Terminal />
+      <EnquiryForm />
       <Footer />
     </main>
   );
