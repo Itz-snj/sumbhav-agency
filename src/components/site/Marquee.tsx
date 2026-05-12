@@ -18,12 +18,12 @@ export function Marquee() {
         {items.map((s, i) => {
           const slug = LOGO_SLUGS[s];
           return (
-            <span
+            <div
               key={i}
-              className="font-mono text-sm uppercase tracking-[0.2em] text-foreground/70 flex items-center gap-12"
+              className="font-mono text-sm uppercase tracking-[0.2em] text-foreground/70 inline-flex items-center gap-12 shrink-0"
             >
               <span className="inline-flex items-center gap-3">
-                {slug && (
+                {slug ? (
                   <img
                     src={`https://cdn.simpleicons.org/${slug}`}
                     alt=""
@@ -31,11 +31,11 @@ export function Marquee() {
                     loading="lazy"
                     className="h-4 w-4 opacity-80"
                   />
-                )}
-                {s}
+                ) : null}
+                <span>{s}</span>
               </span>
               <span className="text-[color:var(--salmon)]">✦</span>
-            </span>
+            </div>
           );
         })}
       </div>

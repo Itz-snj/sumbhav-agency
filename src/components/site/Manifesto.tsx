@@ -20,12 +20,24 @@ export function Manifesto() {
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-px bg-border">
             {content.services.map((s) => (
-              <div key={s.code} className="bg-background p-8 group hover:bg-card transition-colors">
+              <div key={s.code} className="bg-background p-8 group hover:bg-card transition-colors flex flex-col">
                 <div className="font-mono text-xs uppercase tracking-[0.3em] text-foreground/50">{s.code}</div>
                 <div className="mt-4 text-2xl md:text-3xl font-bold uppercase tracking-tight">
                   {s.name}
                 </div>
-                <p className="mt-3 text-foreground/70">{s.blurb}</p>
+                <p className="mt-3 text-foreground/70 flex-1">{s.blurb}</p>
+                {s.badges && (
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {s.badges.map((b) => (
+                      <span
+                        key={b}
+                        className="font-mono text-[10px] uppercase tracking-[0.2em] border border-border rounded-full px-3 py-1 text-foreground/70 group-hover:border-[color:var(--salmon)] group-hover:text-[color:var(--salmon)] transition-colors"
+                      >
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
