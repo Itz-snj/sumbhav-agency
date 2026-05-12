@@ -65,6 +65,12 @@ export function Footer() {
           © {new Date().getFullYear()} SumBhav Studio. All rights reserved.
         </div>
       </div>
+
+      <div className="mt-8 border-t border-border pt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/50">
+        {content.compliance.items.map((c) => (
+          <span key={c}>◍ {c}</span>
+        ))}
+      </div>
     </footer>
   );
 }
