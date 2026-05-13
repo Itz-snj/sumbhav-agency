@@ -192,4 +192,24 @@
   }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { scrollbar-width: none; }
+
+  /* Figma-style selection border */
+  .selection-border {
+    position: absolute;
+    inset: -6px;
+    border: 1.5px solid var(--salmon);
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .selection-corner {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--salmon);
+    border: 1px solid var(--background);
+    pointer-events: none;
+  }
 }

@@ -14,63 +14,103 @@ const ph = (seed: string, w = 1600, h = 1000) =>
 
 export const projects: Project[] = [
   {
-    id: "ledger-os",
-    title: "Ledger OS",
-    client: "Northwind Capital",
+    id: "POS Inventory",
+    title: "POS Inventory APP",
+    client: "British Gas Pvt Ltd",
     description:
-      "A real-time treasury console replacing seventeen spreadsheets. Sub-100ms reconciliation across nine custodians.",
-    techStack: ["TypeScript", "Next.js", "Postgres", "Kafka", "Rust"],
+      "A real-time Point of Sale application with RBAC system, helping cashiers to print and sale items to vendors with real time sync with accounting software.",
+    techStack: ["Flutter", "Firebase", "C#", "CloudFlare"],
     gallery: [
-      { src: ph("1551288049-bebda4e38f71"), alt: "Ledger dashboard" },
-      { src: ph("1559526324-4b87b5e36e44"), alt: "Reconciliation view" },
-      { src: ph("1518186285589-2f7649de83e0"), alt: "Treasury graph" }
+      // POS terminal / retail checkout
+      { src: ph("1556742049-0cfed4f6a45d"), alt: "POS terminal checkout" },
+      // Barcode scanner / inventory shelf
+      { src: ph("1553413077-190dd305871c"), alt: "Inventory warehouse shelves" },
+      // Receipt / payment transaction
+      {
+        src: "https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=800&auto=format&fit=crop",
+        alt: "Payment receipt transaction"
+      }
     ],
-    liveLink: "https://example.com/ledger-os",
-    year: "2025"
+    liveLink: "",
+    year: "2025",
   },
+
   {
-    id: "atlas-cms",
-    title: "Atlas CMS",
-    client: "Field & Forge",
+    id: "Office-V2-CMS",
+    title: "V2 CMS",
+    client: "Tara Solutions",
     description:
-      "A headless content platform built for editorial teams. Block-based authoring, type-safe schemas, and edge-cached delivery.",
-    techStack: ["React", "tRPC", "Drizzle", "Cloudflare Workers"],
+      "A CMS platform used for inhouse customer ticket management by tara solutions, with over 2K+ support tickets, 1k+ leads / quotations managed in house with complete data privacy",
+    techStack: ["NEXT Js", "CloudFlare tunnes", "MongoDb", "TypeScript"],
     gallery: [
-      { src: ph("1467232004584-a241de8bcf5d"), alt: "Atlas editor" },
-      { src: ph("1499750310107-5fef28a66643"), alt: "Schema view" },
-      { src: ph("1517245386807-bb43f82c33c4"), alt: "Publishing flow" }
+      // Person working at a support/office desk
+      { src: ph("1497366216548-37526070297c"), alt: "Office support desk" },
+      // Laptop with dashboard / CMS UI
+      { src: ph("1460925895917-afdab827c52f"), alt: "CMS dashboard on laptop" },
+      // Team working / ticket management
+      {
+        src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop",
+        alt: "Team ticket management"
+      }
     ],
     liveLink: "https://example.com/atlas-cms",
-    year: "2024"
+    year: "2024",
   },
+
   {
-    id: "signal-grid",
-    title: "Signal Grid",
-    client: "Helio Energy",
+    id: "SlothOps",
+    title: "SlothOps",
+    client: "SlothDevs",
     description:
-      "Telemetry mesh for 12k industrial sensors. Streaming anomaly detection with live operator dashboards.",
-    techStack: ["Go", "Timescale", "WebGL", "GraphQL"],
+      "An Agentic Pipeline built for startups to manage there codebase, do agentic QA's and run automated resolutions all under the hood of SlothOps",
+    techStack: ["Python", "LangChain", "VertEx AI Studio", "GraphQL"],
     gallery: [
-      { src: ph("1518770660439-4636190af475"), alt: "Telemetry mesh" },
-      { src: ph("1496181133206-80ce9b88a853"), alt: "Operator console" },
-      { src: ph("1451187580459-43490279c0fa"), alt: "Anomaly chart" }
+      // Code / terminal screen
+      { src: ph("1558494949-ef010cbdcc31"), alt: "Code terminal screen" },
+      // Server room / infrastructure
+      { src: ph("1504639725590-34d0984388bd"), alt: "Server infrastructure" },
+      // AI / neural network visualization
+      { src: ph("1620712943543-bcc4688e7485"), alt: "AI pipeline visualization" },
     ],
-    liveLink: "https://example.com/signal-grid",
-    year: "2025"
+    liveLink: "https://www.slothdevs.xyz/",
+    year: "2026",
   },
+
   {
-    id: "muse-studio",
-    title: "Muse Studio",
-    client: "Independent",
+    id: "Bulk WhatsApp Sender",
+    title: "Whatsapp Sender",
+    client: "K . K . Solutions",
     description:
-      "An AI-augmented design tool. Multiplayer canvas, semantic version history, and a plug-in runtime for LLM agents.",
-    techStack: ["React", "Yjs", "Wasm", "OpenAI", "Vite"],
+      "An Selenium based system which allows me to automate bulk WhatsApp messaging to multiple contacts for outreach and marketing campaigns.",
+    techStack: ["React", "Selenium", "Python", "Node.js"],
     gallery: [
-      { src: ph("1481627834876-b7833e8f5570"), alt: "Muse canvas" },
-      { src: ph("1505373877841-8d25f7d46678"), alt: "Plugin runtime" },
-      { src: ph("1526374965328-7f61d4dc18c5"), alt: "Multiplayer" }
+      // WhatsApp / chat on phone screen
+      { src: ph("1611746872915-64382b5c76da"), alt: "WhatsApp chat interface" },
+      // Smartphone messaging app
+      { src: ph("1516321318423-f06f85e504b3"), alt: "Mobile messaging app" },
+      // Bulk notification / broadcast concept
+      { src: ph("1563986768609-322da13575f3"), alt: "Bulk message broadcast" },
     ],
     liveLink: "https://example.com/muse-studio",
-    year: "2026"
-  }
+    year: "2026",
+  },
+
+  {
+    id: "Clinkr",
+    title: "Clinkr",
+    client: "Chowdhury Mehbub Alam",
+    description:
+      "Link Analytics That Actually Matter — Track every click, understand your audience, and get actionable insights to optimize your content strategy.",
+    techStack: ["React", "Next.js", "PostgreSQL", "TypeScript"],
+    gallery: [
+      // Analytics dashboard with charts
+      { src: ph("1551288049-bebda4e38f71"), alt: "Analytics dashboard" },
+      // Data visualization / graphs
+      { src: ph("1460925895917-afdab827c52f"), alt: "Click data visualization" },
+      // Web analytics / tracking metrics
+      { src: ph("1504868584819-f8e8b4b6d7e3"), alt: "Link tracking metrics" },
+    ],
+    liveLink: "https://clinkr.live/",
+    year: "2026",
+  },
 ];

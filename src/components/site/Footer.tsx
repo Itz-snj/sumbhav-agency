@@ -23,10 +23,11 @@ export function Footer() {
   }, []);
 
   return (
-    <footer id="contact" className="border-t border-border px-4 md:px-10 pt-20 pb-8">
-      <div className="font-mono text-xs uppercase tracking-[0.3em] text-foreground/60 flex flex-wrap gap-x-8 gap-y-2 mb-12">
+    <footer id="footer-bottom" className="border-t border-border px-4 md:px-10 pt-20 pb-8">
+      <div className="font-mono text-xs uppercase tracking-[0.3em] text-foreground/60 flex flex-wrap items-center gap-x-8 gap-y-4 mb-12">
+        <img src="/assets/bglessnewlogo.svg" alt="SumBhav Logo" className="h-12 w-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
         <span>◍ /contact</span>
-        <span>◍ Bengaluru, IN — {time || "--:--:--"} IST</span>
+        <span>◍ Kolkata, IN — {time || "--:--:--"} IST</span>
         <span>◍ Studio open</span>
       </div>
 
@@ -62,7 +63,7 @@ export function Footer() {
         </ul>
 
         <div className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/60 md:text-right">
-          © {new Date().getFullYear()} SumBhav Studio. All rights reserved.
+          © {new Date().getFullYear()} SumBhav. All rights reserved.
         </div>
       </div>
 

@@ -10,7 +10,7 @@ const responses: Record<string, string[]> = {
     "→ Edge runtimes (Cloudflare Workers) + Go/Rust services."
   ],
   "show me a project": [
-    "→ See ./works — Ledger OS, Atlas CMS, Signal Grid, Muse Studio.",
+    "→ See ./works — POS Inventory, V2 CMS, SlothOps, Whatsapp Sender.",
     "→ Each one shipped to production. Each one used daily."
   ],
   "how do you work?": [
@@ -23,7 +23,7 @@ const responses: Record<string, string[]> = {
   ],
   "are you available?": [
     "→ Yes. New engagements opening Q3 2026.",
-    "→ Reply to hello@sumbhav.studio with one paragraph."
+    "→ Reply to office.snj.2005@gmail.com with one paragraph."
   ]
 };
 

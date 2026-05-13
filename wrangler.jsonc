@@ -4,4 +4,9 @@
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
+  // Build-time env vars injected by Vite — set real values in Cloudflare dashboard
+  // (Pages → Settings → Environment variables) and NEVER commit the real key here.
+  "vars": {
+    "VITE_WEB3FORMS_KEY": "REPLACE_IN_CLOUDFLARE_DASHBOARD"
+  }
 }

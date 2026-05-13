@@ -2,8 +2,8 @@
   "brand": {
     "name": "SumBhav",
     "tagline": "SumBhav Works — engineering simplicity at scale.",
-    "location": "West Bengal, India HQ",
-    "email": "hello@sumbhav.studio"
+    "location": "Kolkata, India HQ",
+    "email": "office.snj.2005@gmail.com"
   },
   "hero": {
     "headline": "SumBhav",
@@ -23,28 +23,106 @@
     "body": "We believe great software is invisible — felt before it is seen. SumBhav is a small, senior team that ships like a startup and reasons like a research lab."
   },
   "services": [
-    { "code": "01", "name": "Enterprise Web Platforms", "blurb": "React.js & Next.js builds engineered for UK enterprise scale, audited to 95+ Lighthouse across performance, accessibility and SEO.", "badges": ["Lighthouse 98", "WCAG AA", "Core Web Vitals"] },
-    { "code": "02", "name": "Tally / TDL Integration", "blurb": "Bridging ERP and modern stacks. Custom TDL connectors syncing Tally Prime with Firebase, Postgres and bespoke dashboards.", "badges": ["Tally Prime", "TDL", "Realtime Sync"] },
-    { "code": "03", "name": "Cross-Platform Mobile", "blurb": "Flutter apps with native parity — offline-first, biometric-secure, and shipped to App Store & Play in weeks, not quarters.", "badges": ["Flutter", "Offline-first", "App Store ready"] },
-    { "code": "04", "name": "Cloud & DevOps", "blurb": "Dockerised pipelines on Firebase, Cloudflare and AWS. Zero-downtime deploys, GDPR-aligned data residency for UK clients.", "badges": ["Docker", "Firebase", "GDPR-aligned"] }
+    {
+      "code": "01",
+      "name": "Enterprise Web Platforms",
+      "blurb": "React.js & Next.js builds engineered for UK enterprise scale, audited to 95+ Lighthouse across performance, accessibility and SEO.",
+      "badges": [
+        "Lighthouse 98",
+        "WCAG AA",
+        "Core Web Vitals"
+      ]
+    },
+    {
+      "code": "02",
+      "name": "Tally / TDL Integration",
+      "blurb": "Bridging ERP and modern stacks. Custom TDL connectors syncing Tally Prime with Firebase, Postgres and bespoke dashboards.",
+      "badges": [
+        "Tally Prime",
+        "TDL",
+        "Realtime Sync"
+      ]
+    },
+    {
+      "code": "03",
+      "name": "Cross-Platform Mobile",
+      "blurb": "Flutter apps with native parity — offline-first, biometric-secure, and shipped to App Store & Play in weeks, not quarters.",
+      "badges": [
+        "Flutter",
+        "Offline-first",
+        "App Store ready"
+      ]
+    },
+    {
+      "code": "04",
+      "name": "Cloud & DevOps",
+      "blurb": "Dockerised pipelines on Firebase, Cloudflare and AWS. Zero-downtime deploys, GDPR-aligned data residency for UK clients.",
+      "badges": [
+        "Docker",
+        "Firebase",
+        "GDPR-aligned"
+      ]
+    }
   ],
   "team": [
-    { "name": "Neha", "role": "Founder & Principal Engineer", "bio": "Sets the technical north star. 8+ yrs across UK fintech and enterprise SaaS." },
-    { "name": "Rohan", "role": "Lead Full-Stack Engineer", "bio": "React, Next.js and Node specialist. Owns architecture for our enterprise builds." },
-    { "name": "Yaswarya", "role": "Mobile & Flutter Lead", "bio": "Ships pixel-perfect Flutter apps with offline-first sync and native integrations." },
-    { "name": "Rina", "role": "Tally / TDL Specialist", "bio": "Bridges Tally Prime with modern data layers via custom TDL connectors." },
-    { "name": "Pushpa", "role": "Operations & Client Success", "bio": "Keeps UK and India delivery running on time, on scope, on budget." }
+    {
+      "name": "Naresh Jain",
+      "role": "Co Founder & Principal Engineer",
+      "bio": "Sets the technical north star. 17+ yrs across building custom solutions and enterprise SaaS."
+    },
+    {
+      "name": "Sunita Mazumder",
+      "role": "Co Founder & Operations Head",
+      "bio": "Keeps delivery running on time, on scope, on budget, 17+ yrs of exp"
+    },
+    {
+      "name": "Rohan Bhattacharya",
+      "role": "Growth and Outreach",
+      "bio": "Client Outreaach and Growth Expert"
+    },
+    {
+      "name": "Suman Jain",
+      "role": "SDE",
+      "bio": "Software Development Engineer."
+    },
+    {
+      "name": "Ramik",
+      "role": "SDE",
+      "bio": "Backend Dev, C# Python"
+    },
+    {
+      "name": "Biswajit Das",
+      "role": "Service Head",
+      "bio": "Leads Service at Sumbhav, 10+ years of exp"
+    }
   ],
   "compliance": {
-    "items": ["GDPR Compliant", "Data Security Standard", "GST: 19ABCDE1234F1Z5", "HQ: West Bengal, India"]
+    "items": [
+      "GDPR Compliant",
+      "Data Security Standard",
+      "GST: 19ABCDE1234F1Z5",
+      "HQ: West Bengal, India"
+    ]
   },
   "footer": {
     "headline": "LET'S WORK TOGETHER",
     "socials": [
-      { "label": "GitHub",   "href": "https://github.com" },
-      { "label": "Twitter",  "href": "https://twitter.com" },
-      { "label": "LinkedIn", "href": "https://linkedin.com" },
-      { "label": "Email",    "href": "mailto:hello@sumbhav.studio" }
+      {
+        "label": "GitHub",
+        "href": "https://github.com"
+      },
+      {
+        "label": "Twitter",
+        "href": "https://twitter.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:office.snj.2005@gmail.com"
+      }
     ]
   }
 }

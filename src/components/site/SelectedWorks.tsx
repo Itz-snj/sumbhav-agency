@@ -65,12 +65,12 @@ export function SelectedWorks() {
               key={p.id}
               className="w-screen md:w-[70vw] shrink-0 grid grid-cols-12 gap-6 p-8 md:p-16 border-r border-border"
             >
-              <div className="col-span-12 md:col-span-5 flex flex-col justify-between">
+              <div className="col-span-12 md:col-span-5 flex flex-col justify-between min-w-0">
                 <div>
                   <div className="font-mono text-xs uppercase tracking-[0.3em] text-foreground/50 mb-6">
                     0{i + 1} / {p.year} / {p.client}
                   </div>
-                  <h3 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] uppercase">
+                  <h3 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[0.88] uppercase break-words hyphens-auto">
                     {p.title}
                   </h3>
                   <p className="mt-6 text-foreground/75 max-w-md leading-relaxed">{p.description}</p>
@@ -98,7 +98,7 @@ export function SelectedWorks() {
                 </div>
               </div>
 
-              <div className="col-span-12 md:col-span-7 grid grid-cols-2 grid-rows-2 gap-3">
+              <div className="col-span-12 md:col-span-7 grid grid-cols-2 grid-rows-2 gap-3 min-h-[320px]">
                 <div className="row-span-2 border border-border overflow-hidden bg-card">
                   <img
                     src={p.gallery[0].src}
