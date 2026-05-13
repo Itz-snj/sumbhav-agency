@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { Hero } from "@/components/site/Hero";
 import { Marquee } from "@/components/site/Marquee";
 import { Terminal } from "@/components/site/Terminal";
@@ -8,6 +9,7 @@ import { Footer } from "@/components/site/Footer";
 import { InvertedScrollSection } from "@/components/site/InvertedScrollSection";
 import { Team } from "@/components/site/Team";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
+import { LogicLoader } from "@/components/site/LogicLoader";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -29,9 +31,12 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [loading, setLoading] = useState(true);
   return (
-    <main className="bg-background text-foreground antialiased">
-      <Hero />
+    <>
+      {loading && <LogicLoader onComplete={() => setLoading(false)} />}
+      <main className="bg-background text-foreground antialiased">
+        <Hero />
       <Marquee />
       <InvertedScrollSection />
       <Manifesto />
@@ -40,6 +45,7 @@ function Index() {
       <Terminal />
       <EnquiryForm />
       <Footer />
-    </main>
+      </main>
+    </>
   );
 }
