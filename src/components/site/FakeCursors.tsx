@@ -61,7 +61,7 @@ function RandomCursor({ data }: { data: CursorData }) {
         const duration = 0.8 + Math.random() * 1.7;
 
         // Vary the easing so it doesn't look purely mechanical
-        const easings = ["easeOut", "easeInOut", "linear", "circOut"];
+        const easings = ["easeOut", "easeInOut", "linear", "circOut"] as const;
         const ease = easings[Math.floor(Math.random() * easings.length)];
 
         // Move to the new target
