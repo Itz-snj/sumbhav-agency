@@ -29,9 +29,9 @@ function CursorSvg({ color }: { color: string }) {
 function RandomCursor({ data }: { data: CursorData }) {
   const controls = useAnimation();
 
-  // Start at a random position
-  const initialX = useRef(Math.random() * 90 + 5).current;
-  const initialY = useRef(Math.random() * 90 + 5).current;
+  // Start at a static position to prevent SSR hydration mismatches
+  const initialX = useRef(50).current;
+  const initialY = useRef(50).current;
 
   useEffect(() => {
     let isActive = true;
@@ -43,7 +43,13 @@ function RandomCursor({ data }: { data: CursorData }) {
 
       if (!isActive) return;
 
-      // Fade in at the initial random position
+      // Jump to a random starting position immediately before fading in
+      controls.set({
+        left: `${Math.random() * 90 + 5}%`,
+        top: `${Math.random() * 90 + 5}%`
+      });
+
+      // Fade in
       await controls.start({ opacity: 1, transition: { duration: 0.8 } });
 
       while (isActive) {

@@ -44,7 +44,10 @@ export function Terminal() {
   const ask = (q: string) => {
     if (busy) return;
     setBusy(true);
-    setLines((p) => [...p, { kind: "in", text: q }]);
+    setLines([
+      { kind: "out", text: "sumbhav-cli v1.0.0 — connected." },
+      { kind: "in", text: q }
+    ]);
     const reply = responses[q] ?? ["→ Hmm, ask me about stack, projects, process or pricing."];
     let i = 0;
     const tick = () => {

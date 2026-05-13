@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { GripVertical } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -18,14 +18,29 @@ export function DraggableModule({
   delay = 0,
   initialY = 20,
 }: DraggableModuleProps) {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(max-width: 768px)").matches;
+    }
+    return false;
+  });
   const [isHovered, setIsHovered] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
 
-  const showBorder = isHovered || isDragging;
+  // Keep tracking resize for screen rotations
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia("(max-width: 768px)");
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, []);
+
+  const showBorder = !isMobile && (isHovered || isDragging);
 
   return (
     <motion.div
-      drag
+      drag={!isMobile}
       dragMomentum={false}
       dragElastic={0.15}
       initial={{ opacity: 0, y: initialY }}
@@ -58,7 +73,7 @@ export function DraggableModule({
 
       {/* Optional Top Bar for generic modules */}
       {label && (
-        <div className="flex items-center justify-between mb-3 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/50 relative z-10">
+        <div className="hidden md:flex items-center justify-between mb-3 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/50 relative z-10">
           <span className="inline-flex items-center gap-1.5">
             <GripVertical size={12} /> {label}
           </span>
